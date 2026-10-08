@@ -574,6 +574,29 @@ body.editing .drag-handle.on { display: grid; }
   .field-note:nth-child(2) { margin-left: 0; }
   .f-row { grid-template-columns: 74px 1fr 32px; }
 }
+
+/* ---------- phone fixes (laptop untouched) ---------- */
+@media (max-width: 600px) {
+  .ladder { grid-template-columns: 1fr; }
+  .rungs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .device { padding: 12px; }
+  .yr { min-width: 0; flex: 1 1 0; }
+  .yr span { font-size: 10px; }
+  .plan-form button { padding: 6px 10px; }
+  .collage .snap figcaption { font-size: 16px; }
+  .collage .snap.land { padding-bottom: 34px; }
+  .contact-row { gap: 6px 10px; }
+  .contact-row .lbl { width: 64px; }
+  .contact-row .val { font-size: 13px; }
+  .envelope { height: 400px; clip-path: inset(-60px -16px 0 -16px); }
+  .env-hint { margin-bottom: 0; }
+  .cp, .cp > *, .ladder > *, .rungs > *, .plan li { min-width: 0; }
+  .cp { overflow: hidden; }
+  .env-photo { width: 46%; transform: translate(-4%, -46%) rotate(-8deg); }
+  .env-photo figcaption { font-size: 15px; left: 8px; }
+  .letter { left: 30%; right: 0; }
+  .tab-hint .hand { margin-top: 10px; }
+}
 </style>
 
 <main class="book">
